@@ -14,17 +14,6 @@ export default function Wishlist() {
               Last Ember is currently in active development.
               Stay tuned for our Steam Early Access launch!
             </p>
-
-            {/* Steam store widget — live preview of the Steam page */}
-            <div className="mt-8 flex justify-center">
-              <iframe
-                src="https://store.steampowered.com/widget/4729480/"
-                title="Last Ember on Steam"
-                loading="lazy"
-                className="w-full max-w-[646px] h-[190px] rounded-lg border-0"
-              />
-            </div>
-
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="https://store.steampowered.com/app/4729480/Last_Ember/"

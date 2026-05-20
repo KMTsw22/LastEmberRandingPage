@@ -74,6 +74,16 @@ export default function Hero() {
           Summon Dinosaurs. Build Your Deck. Outlast the Dark.
         </p>
 
+        {/* Steam store widget — live preview of the Steam page */}
+        <div className="mt-8 w-full flex justify-center animate-fade-in-up delay-300">
+          <iframe
+            src="https://store.steampowered.com/widget/4729480/"
+            title="Last Ember on Steam"
+            loading="lazy"
+            className="w-full max-w-[646px] h-[190px] rounded-lg border-0 shadow-2xl shadow-black/50"
+          />
+        </div>
+
         {/* Mobile-only character/boss row (static thumbs — animation runs only on md+) */}
         <div className="mt-10 md:hidden flex items-center justify-center gap-4 animate-fade-in-up delay-300">
           <Image
