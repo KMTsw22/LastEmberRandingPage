@@ -51,10 +51,15 @@ export default function Hero() {
       {/* Foreground content — centered narrow column so poster characters frame it */}
       <div className="relative z-30 max-w-3xl mx-auto px-6 text-center flex flex-col items-center min-h-[calc(100vh-9rem)]">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/15 backdrop-blur-sm text-orange-200 text-sm mb-8 animate-fade-in-up">
+        <a
+          href="https://store.steampowered.com/app/4729480/Last_Ember/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/15 backdrop-blur-sm text-orange-200 text-sm mb-8 animate-fade-in-up hover:bg-orange-500/25 hover:border-orange-500/50 transition-colors"
+        >
           <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
           Coming Soon to Steam
-        </div>
+        </a>
 
         {/* Title */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none animate-fade-in-up delay-100">

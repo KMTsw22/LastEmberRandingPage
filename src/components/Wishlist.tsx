@@ -16,14 +16,22 @@ export default function Wishlist() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="mailto:dashdeploystudio@gmail.com"
+                href="https://store.steampowered.com/app/4729480/Last_Ember/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-10 py-4 rounded-full bg-orange-600 hover:bg-orange-500 transition-colors text-white font-bold text-lg animate-pulse-glow"
+              >
+                Wishlist on Steam
+              </a>
+              <a
+                href="mailto:dashdeploystudio@gmail.com"
+                className="px-10 py-4 rounded-full border border-white/15 hover:border-white/30 hover:bg-white/5 transition-colors text-zinc-200 font-semibold text-lg"
               >
                 Get Notified
               </a>
             </div>
             <p className="mt-6 text-zinc-500 text-sm">
-              Send us an email to get notified when we launch
+              Wishlist on Steam, or send us an email to get notified when we launch
             </p>
           </div>
         </div>

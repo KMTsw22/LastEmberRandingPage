@@ -2,7 +2,7 @@ const milestones = [
   {
     phase: "Phase 1",
     title: "MVP — Chapter 1",
-    status: "current",
+    status: "complete",
     items: [
       "Core run loop — map, battle, reward, shop, rest, boss",
       "Arkane, the carnivore-taming ember bearer, as Chapter 1's playable summoner",
@@ -15,7 +15,7 @@ const milestones = [
   {
     phase: "Phase 2",
     title: "Steam Early Access",
-    status: "upcoming",
+    status: "current",
     items: [
       "Steam store page, community hub, and Auto-Cloud save sync",
       "Next chapter with a new biome, boss, and summoner archetype",
@@ -40,11 +40,13 @@ const milestones = [
 
 function StatusBadge({ status }: { status: string }) {
   const styles: Record<string, string> = {
-    current: "bg-green-500/20 text-green-400 border-green-500/30",
+    complete: "bg-green-500/20 text-green-400 border-green-500/30",
+    current: "bg-orange-500/20 text-orange-400 border-orange-500/30",
     upcoming: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
     future: "bg-zinc-500/20 text-zinc-400 border-zinc-500/30",
   };
   const labels: Record<string, string> = {
+    complete: "✓ Complete",
     current: "In Progress",
     upcoming: "Next Up",
     future: "Planned",
