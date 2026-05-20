@@ -22,25 +22,12 @@ export default function Hero() {
       <div className="absolute top-1/3 left-[12%] w-[320px] h-[320px] bg-amber-600/20 rounded-full blur-[110px] pointer-events-none" />
       <div className="absolute top-1/3 right-[12%] w-[420px] h-[420px] bg-orange-700/18 rounded-full blur-[130px] pointer-events-none" />
 
-      {/* T-Rex T2 — Arkane's summoned ally, lifted slightly above ground line so it reads as standing further back, not crowding Arkane */}
-      <div className="hidden md:block absolute bottom-0 left-[30%] lg:left-[28%] w-[26%] lg:w-[22%] h-[34%] pointer-events-none z-10">
-        <Image
-          src="/images/T-Rex_T2.png"
-          alt="T-Rex (T2) — Arkane's apex summon"
-          fill
-          priority
-          sizes="(max-width: 1024px) 29vw, 25vw"
-          className="object-contain object-bottom drop-shadow-[0_0_40px_rgba(168,85,247,0.35)]"
-          style={{ objectPosition: "left bottom" }}
-        />
-      </div>
-
       {/* Arkane ambient glow — static decorative blob (separate from animated image so it doesn't flicker per frame) */}
       <div className="hidden md:block absolute bottom-[12%] left-[8%] w-[28%] h-[44%] bg-amber-600/20 rounded-full blur-[90px] pointer-events-none z-[5]" />
 
-      {/* Arkane — left poster layer (122-frame idle animation), in front of T-Rex, both anchored to the same ground line.
+      {/* Arkane — left poster layer (122-frame idle animation), anchored to the ground line.
           NOTE: no drop-shadow filter on the animated <img> — the alpha mask changes every frame which would re-render
-          the shadow each tick and project flicker onto whatever sits behind her (the T-Rex). Static glow above handles ambience. */}
+          the shadow each tick. Static glow above handles ambience. */}
       <div className="hidden md:flex absolute bottom-0 left-[1%] w-[29%] lg:w-[26%] h-[63%] pointer-events-none z-20 items-end justify-start">
         <ArkaneIdle
           alt="Arkane"
